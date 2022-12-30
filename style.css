@@ -11,18 +11,19 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
-/* body {
-    padding-top: 40px;
-} */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 nav {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
+    /* z-index: 999; */
     transition: all 0.3s ease;
     display: flex;
     justify-content: end;
@@ -34,23 +35,41 @@ nav > ul {
     display: flex;
     list-style: none;
     gap: 30px;
+    margin-right: 10px;
 }
 
 nav a {
     color: white;
-    text-decoration: none;
 }
 
 .telas {
     width: 100%;
-    height: 100vh;
+    min-height: 70vh;
+    padding-top: 50px;
+}
+
+.telas-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding: 20px;
+}
+
+.telas-conteudo-texto {
+    max-width: 500px;
+    text-align: justify;
+    padding-top: 40px;
 }
 
 .titulos, .subtitulos {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
+.titulos {
+    margin-top: 10px;
+}
 .subtitulos::before, .subtitulos::after {
     content: " ---- ";
     
@@ -61,6 +80,10 @@ nav a {
 #inicio {
     height: 100vh;
     background-color: var(--cor4);
+    background-image: url(imagens/Timelapse-Night.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     color: white;
@@ -71,27 +94,61 @@ nav a {
 }
 
 /* TELA DE SOBRE */
-#sobre-conteudo {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 25px;
-}
 
-#sobre-conteudo-texto {
-    max-width: 600px;
-    text-align: justify;
-}
 
 /* TELA DE SKILLS */
 
-#skills-conteudo {
+
+/* TELA DE QUALIFICAÇÕES */
+#tela-cards {
     display: flex;
-    padding-top: 25px;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 30px;
+    padding: 40px 25px;
+    gap: 20px;
 }
 
-#skills-conteudo-texto {
-    max-width: 600px;
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    max-width: 500px;
+    height: 90px;
+    border-radius: 10px;
+    background-color: var(--cor1);
+}
+
+.cards a {
+    color: white;
+}
+
+#area-de-imagem {
+    display: flex;
+    align-items: center;
+}
+
+/* TELA DE CONTATO */
+#contato-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#infos {
+    max-width: 450px;
+    padding: 20px;
+}
+
+#infos-especificas {
+    margin-top: 30px;
+    gap: 30px;
+}
+
+#infos-especificas section {
+    margin-bottom: 20px;
 }
 
 footer {
@@ -99,6 +156,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--cor1);
+    color: white;
+}
+
+footer a {
+    color: white;
 }
 
 footer ul {
