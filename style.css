@@ -56,11 +56,17 @@ nav a {
     padding: 20px;
 }
 
+.telas-conteudo p {
+    margin-top: 20px;
+    line-height: 1.2rem;
+}
+
 .telas-conteudo-texto {
     max-width: 500px;
     text-align: justify;
     padding-top: 40px;
 }
+
 
 .titulos, .subtitulos {
     text-align: center;
@@ -70,6 +76,7 @@ nav a {
 .titulos {
     margin-top: 10px;
 }
+
 .subtitulos::before, .subtitulos::after {
     content: " ---- ";
     
@@ -140,6 +147,10 @@ nav a {
 #infos {
     max-width: 450px;
     padding: 20px;
+}
+
+#infos p {
+    margin-top: 5px;
 }
 
 #infos-especificas {
