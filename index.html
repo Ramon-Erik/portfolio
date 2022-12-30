@@ -30,9 +30,9 @@
     <section class="telas" id="sobre">
         <h1 class="titulos">Sobre mim</h1>
         <p class="subtitulos">quem eu sou</p>
-        <div id="sobre-conteudo">
-            <img src="#" alt="meu-rosto">
-            <div id="sobre-conteudo-texto">
+        <div class="telas-conteudo">
+            <img src="#" alt="meu-rosto" style="padding-top: 40px;">
+            <div class="telas-conteudo-texto">
                 <h3>Eu sou o Ramon, um desenvolvedor</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quos modi sint odit officia commodi tempora autem esse perspiciatis ullam vel, fuga quidem libero! Hic quis harum quos, molestiae ex asperiores quas facere laborum magni necessitatibus, cupiditate beatae eaque esse culpa quibusdam. Deleniti laboriosam quod exercitationem rerum. Facilis hic voluptas quisquam expedita ut eos accusamus voluptate autem. Cupiditate veritatis sequi facere eum ad similique molestias, saepe quasi cumque asperiores, explicabo cum et aliquam id, enim sit minima eligendi harum error? Sit incidunt natus magni ad quisquam pariatur tenetur nemo illum possimus laboriosam laborum obcaecati modi, numquam omnis nihil architecto ratione?</p>
             </div>
@@ -42,11 +42,10 @@
     <section class="telas" id="skills">
         <h1 class="titulos">Minhas skills</h1>
         <p class="subtitulos">o que eu sei</p>
-        <div id="skills-conteudo">
-            <div id="skills-conteudo-texto">
+        <div class="telas-conteudo">
+            <div class="telas-conteudo-texto">
                 <h3>Minhas skills.</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nemo autem aliquam necessitatibus obcaecati. Est quam incidunt nesciunt, ratione molestias tempore placeat perferendis amet aperiam ullam eveniet id modi hic magni atque cum ab deleniti. Dolores error, eos repellendus ullam tenetur officia mollitia soluta pariatur, voluptatem, dicta architecto ipsa dolorem hic cupiditate dolorum numquam officiis sunt nisi necessitatibus provident? Quos officiis porro facere. Corporis similique et cum laboriosam possimus fuga libero, fugiat magnam. Pariatur blanditiis aliquam eos aperiam dolor animi totam earum aut repellat! Accusantium ea architecto, numquam error optio veniam facilis iste, unde fuga, quaerat ab repellendus? Ab, quia.</p>
-                
             </div>
             <div id="skills-conteudo-tabela">
                 <p>tabelas de skills</p>
@@ -56,31 +55,63 @@
     <section class="telas" id="quali">
         <h1 class="titulos">Experiencias e educação</h1>
         <p class="subtitulos">qualifacações</p>
-        <div>
-            <p>links dos cursos que ja fiz no github</p>
+        <div id="tela-cards">
+            <div class="cards">
+                <p><a href="https://github.com/ramon-erik/exercicios-python" target="_blank">Curso de python + exercicios</a></p>
+                <img src="imagens/python.ico" alt="logo-python" width="80px">
+            </div>
+            <div class="cards">
+                <p><a href="https://github.com/ramon-erik/html-css" target="_blank">Curso de HTML5 e CSS3</a></p>
+                <section id="area-de-imagem">
+                    <img src="imagens/html5.ico" alt="logo-html" width="80px">
+                    <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="logo-css" width="60px">
+                </section>
+            </div>
         </div>
     </section>
+
     <section class="telas" id="contato">
         <h1 class="titulos">Você pode me contatar</h1>
         <p class="subtitulos">fale comigo</p>
-        <div>
-            Name
-            Davi Souza
-            Address
-            Recife, Pernambuco
-            Email
-            davisouza2001dv@gmail.com
-        </div>
-        <div>
-            formulario de contato
+        <div class="telas-conteudo">
+            <section id="infos">
+                <h3>Você quer se comunicar comigo?</h3>
+                <p>
+                    Se você quer falar ou comunicar algo para mim, você pode enviar um emanil (ao lado), ou ir nas minhas rede sociais.
+                </p>
+                <section id="infos-especificas">
+                    <section>
+                        <p>Nome</p>
+                        <p>Ramon Erik</p>
+                    </section>
+                    <section>
+                        <p>Endereço</p>
+                        <p>Fortaleza, Ceará</p>
+                    </section>
+                    <section>
+                        <p>Email</p>
+                        <p>ramonerik297a@gmail.com</p>
+                    </section>
+                    <section>
+                        <p>Instagram</p>
+                        <p>29erik_</p>
+                    </section>
+                </section>
+            </section>
+            <section id="contate-me">
+                <div>
+                    adicionar padding de 20px
+                    formulario de envio de emails (em construção)
+                </div>
+            </section>
         </div>
     </section>
 
     <footer>
         <ul>
-            <li>icone github</li>
+            <li><a href="#">icone github</a></li>
             <li>|</li>
-            <li>icone instagram</li>
+            <li><a href="#">icone instagram</a></li>
         </ul>
         <p>Desenvolvido por <strong>Ramon Erik</strong></p>
     </footer>
