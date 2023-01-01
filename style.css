@@ -28,7 +28,7 @@ nav {
     display: flex;
     justify-content: end;
     padding: 20px 0;
-    background-color: var(--cor2);
+    background-color: var(--cor4);
 }
 
 nav > ul {
@@ -73,7 +73,7 @@ nav a {
 }
 
 strong {
-    color: var(--cor4);
+    color: var(--cor3);
 }
 
 .titulos, .subtitulos {
@@ -87,8 +87,9 @@ strong {
 }
 
 .subtitulos {
-    color: var(--cor4);
+    color: var(--cor3);
     font-weight: bold;
+    font-size: 1.35rem;
 }
 
 .subtitulos::before {
@@ -112,6 +113,11 @@ strong {
 
 #texto-inicio {
     padding-left: 50px;
+    font-size: 2.3rem;
+}
+
+#texto-inicio h1 {
+    font-weight: bolder;
 }
 
 /* TELA DE SOBRE */
