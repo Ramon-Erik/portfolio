@@ -234,6 +234,7 @@ strong {
 .linha-form button {
     display: block;
     width: 92%;
+    background-color: #dbdbdb44;
 } 
 
 .linha-form input, 
