@@ -47,7 +47,46 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nemo autem aliquam necessitatibus obcaecati. Est quam incidunt nesciunt, ratione molestias tempore placeat perferendis amet aperiam ullam eveniet id modi hic magni atque cum ab deleniti. Dolores error, eos repellendus ullam tenetur officia mollitia soluta pariatur, voluptatem, dicta architecto ipsa dolorem hic cupiditate dolorum numquam officiis sunt nisi necessitatibus provident? Quos officiis porro facere. Corporis similique et cum laboriosam possimus fuga libero, fugiat magnam. Pariatur blanditiis aliquam eos aperiam dolor animi totam earum aut repellat! Accusantium ea architecto, numquam error optio veniam facilis iste, unde fuga, quaerat ab repellendus? Ab, quia.</p>
             </div>
             <div id="skills-conteudo-tabela">
-                <p>tabelas de skills</p>
+                <!-- linha 1 python -->
+                <div class="linha-tabela">
+                    <div class="info-valores">
+                        <p>Python</p>
+                        <p>icone</p>
+                    </div>
+                    <div>
+                        <hr class="linha">
+                    </div>
+                </div>
+                <!-- linha 2 HTML -->
+                <div class="linha-tabela">
+                    <div class="info-valores">
+                        <p>HTML</p>
+                        <p>icone</p>
+                    </div>
+                    <div>
+                        <hr class="linha">
+                    </div>
+                </div>
+                <!-- Linha 3 CSS -->
+                <div class="linha-tabela">
+                    <div class="info-valores">
+                        <p>CSS</p>
+                        <p>icone</p>
+                    </div>
+                    <div>
+                        <hr class="linha">
+                    </div>
+                </div>
+                <!-- Linha 4 Javascript -->
+                <div class="linha-tabela">
+                    <div class="info-valores">
+                        <p>Javascript</p>
+                        <p>icone</p>
+                    </div>
+                    <div>
+                        <hr class="linha">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -64,6 +103,12 @@
                 <section id="area-de-imagem">
                     <img src="imagens/html5.ico" alt="logo-html" width="80px">
                     <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="logo-css" width="60px">
+                </section>
+            </div>
+            <div class="cards">
+                <p><a href="https://github.com/ramon-erik/html-css" target="_blank">Curso de Javascript</a></p>
+                <section id="area-de-imagem">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" alt="logo-html" width="80px">
                 </section>
             </div>
         </div>
@@ -98,10 +143,22 @@
                 </section>
             </section>
             <section id="contate-me">
-                <div>
-                    adicionar padding de 20px
-                    formulario de envio de emails (em construção)
-                </div>
+                <h2>Me envie um email</h2>
+                <form action="https://formsubmit.co/luigabriel123a@gmail.com" method="POST" autocomplete="on">
+                    <div class="linha-form">
+                        <input type="text" name="name" id="iname" placeholder="Seu nome" required>
+                    </div>
+                    <div class="linha-form">
+                        <input type="email" name="email" id="iemail" placeholder="Email" required>
+                    </div>
+                    <div class="linha-form">
+                        <textarea name="message" id="imessage" cols="30" rows="10" placeholder="Deixe sua menssagem..." required></textarea>
+                    </div>
+                    <div class="linha-form linha-botao">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
             </section>
         </div>
     </section>
