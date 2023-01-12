@@ -5,7 +5,7 @@
     --cor2: #2F6690;
     --cor3: #4A92BF;
     --cor4: #108BDD;
-    --cor5: #FF3366;
+    --cor5: #000921;
 }
 
 * {
@@ -21,14 +21,15 @@ body {
 nav {
     width: 100%;
     position: fixed;
-    top: 0;
-    left: 0;
-    /* z-index: 999; */
     transition: all 0.3s ease;
     display: flex;
     justify-content: end;
     padding: 20px 0;
-    background-color: var(--cor4);
+    background-color: var(--cor5);
+}
+
+nav.sticky {
+    background-color: var(--cor5);
 }
 
 nav > ul {
@@ -129,7 +130,7 @@ strong {
 #sobre img {
     padding-top: 40px;
     width: 380px;
-    border-radius: 40px;
+    border-radius: 50%;
     /* margin-left: 30px; */
 }
 
@@ -138,6 +139,21 @@ strong {
 }
 
 /* TELA DE SKILLS */
+#skills-conteudo-tabela {
+    width: 400px;
+    padding-top: 30px;
+}
+
+.info-valores {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9px;
+}
+
+.linha {
+    height: 5px;
+    background: linear-gradient(to right, var(--cor4), var(--cor5));
+}
 
 
 /* TELA DE QUALIFICAÇÕES */
@@ -157,7 +173,7 @@ strong {
     align-items: center;
     justify-content: space-around;
     padding: 10px;
-    max-width: 500px;
+    min-width: 300px;
     height: 90px;
     border-radius: 10px;
     background-color: var(--cor1);
@@ -173,6 +189,7 @@ strong {
 }
 
 /* TELA DE CONTATO */
+/* COLUNA CONTEUDO 1 */
 #contato-conteudo {
     display: flex;
     flex-wrap: wrap;
@@ -194,6 +211,78 @@ strong {
 
 #infos-especificas section {
     margin-bottom: 20px;
+}
+
+/* COLUNA CONTEUDO 2 */
+#contate-me form {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    max-width: 350px;
+}
+
+#contate-me h2 {
+    padding: 20px;  
+}
+
+.linha-form {
+    margin: 5px;
+}
+
+.linha-form input, 
+.linha-form textarea, 
+.linha-form button {
+    display: block;
+    width: 92%;
+} 
+
+.linha-form input, 
+.linha-form textarea {
+    font-family: inherit;
+    padding: 0.8rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s
+}
+
+.linha-form textearea {
+    min-height: 13rem;
+    resize: vertical;
+}
+
+.linha-form input:hover,
+.linha-form input:focus,
+.linha-form textarea:hover,
+.linha-form textarea:focus {
+    outline: none;
+    border-color: var(--cor4);
+    box-shadow: 0 0 0 3px var(--cor2);
+}
+
+.linha-botao {
+    display: flex;
+    justify-content: center;
+    /* background-color: var(--cor5); */
+}
+
+.linha-form button {
+    display: block;
+    padding: 10px;
+    background-color: var(--cor1);
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 100px;
+}
+
+.linha-form button:focus, 
+.linha-form button:hover {
+    outline: none;
+    background: var(--cor1);
 }
 
 footer {
