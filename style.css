@@ -139,7 +139,7 @@ strong {
 }
 
 /* TELA DE SKILLS */
-#skills-conteudo-tabela {
+.conteudo-tabela {
     width: 400px;
     padding-top: 30px;
 }
@@ -167,6 +167,11 @@ strong {
     gap: 20px;
 }
 
+.titulo-tela-cards {
+    width: 100%;
+    text-align: center;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -186,6 +191,19 @@ strong {
 #area-de-imagem {
     display: flex;
     align-items: center;
+}
+
+#tela-certificados {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+}
+
+#tabela-certificados {
+    width: 100%;
 }
 
 /* TELA DE CONTATO */
