@@ -238,7 +238,6 @@ strong {
     display: flex;
     flex-direction: column;
     width: 450px;
-    max-width: 320px;
 }
 
 #contate-me h2 {
