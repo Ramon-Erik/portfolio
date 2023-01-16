@@ -23,13 +23,17 @@ nav {
     position: fixed;
     transition: all 0.3s ease;
     display: flex;
-    justify-content: end;
+    justify-content: ;
     padding: 20px 0;
-    background-color: var(--cor5);
+    background-color: transparent;
 }
 
-nav.sticky {
-    background-color: var(--cor5);
+nav p {
+    text-align: center;
+}
+
+nav.scrolling {
+    background-color: var(--cor4);
 }
 
 nav > ul {
@@ -102,7 +106,7 @@ strong {
 /* TELA DE INICIO */
 #inicio {
     height: 100vh;
-    background-color: var(--cor4);
+    background-color: var(--cor5);
     background-image: url(imagens/waves-bgsvg.svg);
     background-size: cover;
     background-position: left bottom;
@@ -129,8 +133,6 @@ strong {
 /* TELA DE SOBRE */
 #sobre img {
     padding-top: 40px;
-    width: 380px;
-    border-radius: 50%;
 }
 
 #sobre .telas-conteudo-texto {
