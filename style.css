@@ -23,8 +23,8 @@ nav {
     position: fixed;
     transition: all 0.3s ease;
     display: flex;
-    justify-content: ;
-    padding: 20px 0;
+    justify-content: space-between;
+    padding: 10px 0;
     background-color: transparent;
 }
 
@@ -40,6 +40,7 @@ nav > ul {
     display: flex;
     list-style: none;
     gap: 30px;
+    padding-top: 20px;
     margin-right: 90px;
 }
 
@@ -57,6 +58,7 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    /* align-items: baseline; */
     padding-top: 25px;
     padding: 20px;
 }
@@ -196,17 +198,17 @@ strong {
     align-items: center;
 }
 
-#tela-certificados {
+.tela-certificados {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
     width: 550px;
     min-width: 320px;
 }
 
-#tabela-certificados {
+.tabela-certificados {
     width: 100%;
 }
 
