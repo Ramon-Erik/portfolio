@@ -21,8 +21,8 @@ function mostrarOpc() {
     }
 }
 
+
 function scrolling(){
-    console.log('acionou');
-    header.classList.toggle('scrolling', scrollY>0);
+    header.classList.toggle('scrolling', scrollY > 0)
 }
-window.addEventListener('scroll', scrolling);
+window.addEventListener('scroll',  scrolling)
