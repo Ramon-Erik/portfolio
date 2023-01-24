@@ -16,12 +16,7 @@ nesta folha estão os itens de header, footer e outros
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-}
-
-body, html {
-    overflow-x: hidden;
-    width: 100vw;
-    height: 100vh;
+    scroll-behavior: smooth;
 }
 
 /* header */
@@ -31,6 +26,10 @@ header {
     align-items: center;
     justify-content: space-around;
     width: 100%;
+}
+
+header.scrolling {
+    background-color: var(--cor4);
 }
 
 .menu {
@@ -68,10 +67,6 @@ nav {
     right: 16px;
     text-align: center;
     width: 32vw;
-    background-color: var(--cor1);
-}
-
-.scrolling {
     background-color: var(--cor1);
 }
 
