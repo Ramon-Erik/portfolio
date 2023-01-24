@@ -78,6 +78,7 @@ nav li {
 
 nav a{
     color:white; 
+    transition: .3s;
 }
 
 nav a:hover, nav a:focus{
@@ -104,4 +105,24 @@ footer ul {
     display: flex;
     gap: 30px;
     padding: 10px;
+}
+
+@media screen and (min-width: 660px) {
+    .menu {display: none;}
+    nav {
+        display: block;
+        position: relative;
+        width: fit-content;
+        display: flex;
+        font-size: 1.2em;
+        background-color: transparent;
+    }
+    nav ul, nav li {display: flex; border: none; gap: 32px;}
+
+    nav a:hover, nav a:focus {
+        padding: 5px;
+        color: white;
+        background-color: var(--cor1);
+        border-radius: 8px;
+    }
 }
