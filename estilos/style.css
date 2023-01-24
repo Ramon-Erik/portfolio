@@ -26,11 +26,17 @@ header {
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    padding: 10px;
+    transition: .3s;
 }
+
+header #img {background-image: url(../imagens/logo-ramon.png); width: 215px; height: 35px;}
 
 header.scrolling {
     background-color: var(--cor2);
 }
+
+header div.scrolling {background-image: url(../imagens/logo-ramon-2.png); width: 215px; height: 35px;}
 
 .menu {
     position: relative;
