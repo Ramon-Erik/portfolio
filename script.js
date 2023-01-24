@@ -2,6 +2,7 @@ const menu = document.getElementsByClassName('menu')[0]
 const linha1 = document.getElementsByClassName('linha1')[0]
 const linha2 = document.getElementsByClassName('linha2')[0]
 const linha3 = document.getElementsByClassName('linha3')[0]
+const header = document.querySelector('header')
 const nav = document.getElementsByTagName('nav')[0]
 
 function mostrarOpc() {
@@ -19,3 +20,9 @@ function mostrarOpc() {
         linha3.classList.remove('rodar-negativo')
     }
 }
+
+function scrolling(){
+    console.log('acionou');
+    header.classList.toggle('scrolling', scrollY>0);
+}
+window.addEventListener('scroll', scrolling);
