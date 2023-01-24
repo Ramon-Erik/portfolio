@@ -30,7 +30,7 @@ header {
     transition: .3s;
 }
 
-header #img {background-image: url(../imagens/logo-ramon.png); width: 215px; height: 35px;}
+header .img {background-image: url(../imagens/logo-ramon.png); width: 215px; height: 35px;}
 
 header.scrolling {
     background-color: var(--cor2);
@@ -116,14 +116,13 @@ footer ul {
 @media screen and (min-width: 660px) {
     .menu {display: none;}
     nav {
-        display: block;
+        display: flex;
         position: relative;
         width: fit-content;
-        display: flex;
-        font-size: 1.2em;
+        font-size: 1.1em;
         background-color: transparent;
     }
-    nav ul, nav li {display: flex; border: none; gap: 32px;}
+    nav ul, nav li {display: flex; border: none; gap: 20px;}
 
     nav a:hover, nav a:focus {
         padding: 5px;

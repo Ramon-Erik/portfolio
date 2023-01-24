@@ -3,7 +3,7 @@ const linha1 = document.getElementsByClassName('linha1')[0]
 const linha2 = document.getElementsByClassName('linha2')[0]
 const linha3 = document.getElementsByClassName('linha3')[0]
 const header = document.querySelector('header')
-const minhaLogo = document.querySelector('#img')
+const minhaLogo = document.querySelector('.img')
 const nav = document.getElementsByTagName('nav')[0]
 
 function mostrarOpc() {
