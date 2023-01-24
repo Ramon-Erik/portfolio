@@ -4,212 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="estilos/telas.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="script.js" defer></script> 
 </head>
 <body>
-    <nav>
-        <img id="main-logo" src="imagens/logo-ramon.png" alt="logo ramon-erik">
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#quali">Qualificações</a></li>
-            <li><a href="#contato">Contate-me</a></li>
-        </ul>
-    </nav>
-    <section class="telas" id="inicio">
-        <div id="texto-inicio">
-            <p>Olá, meu nome é</p>
-            <h1>Ramon Erik</h1>
-            <p>E eu sou um <strong>desenolvedor</strong></p>
+    <header>
+        <img id="main-logo" src="imagens/logo-ramon.png" alt="nome ramon-erik">
+        <div class="menu">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
         </div>
-    </section>
-
-    <section class="telas" id="sobre">
-        <h1 class="titulos">Sobre mim</h1>
-        <p class="subtitulos">quem eu sou</p>
-        <div class="telas-conteudo">
-            <img src="imagens/eu.jpg" alt="meu-rosto">
-            <div class="telas-conteudo-texto">
-                <h3>Eu sou o Ramon, um <strong>desenvolvedor</strong></h3>
-                <p>Olá! Meu nome é Ramon, e nos três últimos anos tenho estudado sobre programação, mais especificamente área de front-end / desenvolvimento web, onde quero trabalhar. Tenho desenvolvido alguns projetos, envolvendo HTML, CSS e JS, onde posso colocar em prática minha paixão por design de páginas web, como em telas de login. Considerando que isso é uma breve introdução a mim e meus projetos, você pode dar uma olhada melhor no meu portfolio rolando a tela para baixo, ou usando os links acima.
-                </p>
-                <a href="#">Veja meus certificados</a>
+        <nav>
+            <ul>
+                <li><a href="#sobre">sobre</a></li>
+                <li><a href="#sobre">sobre</a></li>
+                <li><a href="#sobre">sobre</a></li>
+                <li><a href="#sobre">sobre</a></li>
+                <li><a href="#sobre">sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="tela">
+            <div class="texto">
+                <p>Olá, meu nome é</p>
+                <h1>ramon Erik</h1>
             </div>
-        </div>
-    </section>
-
-    <section class="telas" id="skills">
-        <h1 class="titulos">Minhas skills</h1>
-        <p class="subtitulos">o que eu sei</p>
-        <div class="telas-conteudo">
-            <div class="telas-conteudo-texto">
-                <h3>Minhas skills</h3>
-                <p>Logo em seguida, estão em destaque as linguagens e tecnologias que mais tenho me aprofundado e dedicado em ter tempo de estudo. Sempre fui muito interessado em resultados imediatos e visíveis, por isso sempre fui mais adepto a desenvolvimento web e suas tecnologias, tecnologias essas que sempre me proporcionaram muita liberdade, principalmente criatividade em meus projetos.</p>
+        </section>
+        <section id="sobre" class="tela">
+            <div class="texto">
+                <p>aaaaa, meu nome é</p>
+                <h1>ramon Erik</h1>
             </div>
-            <div class="conteudo-tabela">
-                <!-- linha 1 HTML -->
-                <div class="linha-tabela">
-                    <div class="info-valores">
-                        <p>HTML</p>
-                        <p>🌐</p>
-                    </div>
-                    <div>
-                        <hr class="linha">
-                    </div>
-                </div>
-                <!-- Linha 2 CSS -->
-                <div class="linha-tabela">
-                    <div class="info-valores">
-                        <p>CSS</p>
-                        <p>🌐</p>
-                    </div>
-                    <div>
-                        <hr class="linha">
-                    </div>
-                </div>
-                <!-- Linha 3 Javascript -->
-                <div class="linha-tabela">
-                    <div class="info-valores">
-                        <p>Javascript</p>
-                        <p>💻</p>
-                    </div>
-                    <div>
-                        <hr class="linha">
-                    </div>
-                </div>
-                <!-- linha 4 git -->
-                <div class="linha-tabela">
-                    <div class="info-valores">
-                        <p>Git e Github</p>
-                        <p>💻</p>
-                    </div>
-                    <div>
-                        <hr class="linha">
-                    </div>
-                </div>
-                <!-- linha 5 python -->
-                <div class="linha-tabela">
-                    <div class="info-valores">
-                        <p>Python</p>
-                        <p>💻</p>
-                    </div>
-                    <div>
-                        <hr class="linha">
-                    </div>
-                </div>
+        </section>
+        <section id="sobre" class="tela">
+            <div class="texto">
+                <p>aaaaa, meu nome é</p>
+                <h1>ramon Erik</h1>
             </div>
-        </div>
-    </section>
-    <section class="telas" id="quali">
-        <h1 class="titulos">Experiencias e educação</h1>
-        <p class="subtitulos">qualifacações</p>
-        <div class="telas-conteudo">
-            <div id="tela-cards">
-                <h2 class="titulo-tela-cards">Cursos realizados</h2>
-                <div class="cards">
-                    <p><a href="https://github.com/ramon-erik/exercicios-python" target="_blank">Curso de python + exercicios</a></p>
-                    <img src="imagens/python.ico" alt="logo-python" width="80px">
-                </div>
-                <div class="cards">
-                    <p><a href="https://github.com/ramon-erik/html-css" target="_blank">Curso de HTML5 e CSS3</a></p>
-                    <section id="area-de-imagem">
-                        <img src="imagens/html5.ico" alt="logo-html" width="80px">
-                        <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="logo-css" width="60px">
-                    </section>
-                </div>
-                <div class="cards">
-                    <p><a href="https://github.com/Ramon-Erik/estudos-javascript" target="_blank">Curso de Javascript</a></p>
-                    <section id="area-de-imagem">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" alt="logo-html" width="80px">
-                    </section>
-                </div>
+        </section>
+        <section id="sobre" class="tela">
+            <div class="texto">
+                <p>aaaaa, meu nome é</p>
+                <h1>ramon Erik</h1>
             </div>
-            <div>
-                <h2 class="titulo-tela-cards" id="titulo-tela-certificados">Certificados</h2>
-                <div id="tela-certificados">
-                    <!-- div tabela > div linha (certificado e emoji) -->
-                    <div class="conteudo-tabela tabela-certificados">
-                        <div class="linha-tabela">
-                            <div class="info-valores"><p>Escola Virtual - Fundação Bradesco - Desenvolvimento Profissional<br>Out 2022</p><p>📓</p></div>
-                            <div><hr class="linha"></div>
-                        </div>
-                    </div>
-                    <div class="conteudo-tabela tabela-certificados">
-                        <div class="linha-tabela">
-                            <div class="info-valores"><p>Escola Virtual - Fundação Bradesco - Cultura Digital<br>Out 2022</p><p>📓</p></div>
-                            <div><hr class="linha"></div>
-                        </div>
-                    </div>
-                    <div class="conteudo-tabela tabela-certificados">
-                        <div class="linha-tabela">
-                            <div class="info-valores"><p>Escola Virtual - Fundação Bradesco - Fundamentos da TI<br>Out 2022</p><p>📓</p></div>
-                            <div><hr class="linha"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="telas" id="contato">
-        <h1 class="titulos">Você pode me contatar</h1>
-        <p class="subtitulos">fale comigo</p>
-        <div class="telas-conteudo">
-            <section id="infos">
-                <h2>Você quer se comunicar comigo?</h2>
-                <p>
-                    Se você quer falar ou comunicar algo para mim, você pode enviar um email (logo a seguir), ou ir nas minhas rede sociais.
-                </p>
-                <section id="infos-especificas">
-                    <section>
-                        <h3>Nome</h3>
-                        <p>Ramon Erik</p>
-                    </section>
-                    <section>
-                        <h3>Endereço</h3>
-                        <p>Maranguape, Ceará</p>
-                    </section>
-                    <section>
-                        <h3>Email</h3>
-                        <p>ramonerik297a@gmail.com</p>
-                    </section>
-                    <section>
-                        <h3>Instagram</h3>
-                        <p>29erik_</p>
-                    </section>
-                </section>
-            </section>
-            <section id="contate-me">
-                <h2>Me envie um email</h2>
-                <form action="https://formsubmit.co/luigabriel123a@gmail.com" method="POST" autocomplete="on">
-                    <div class="linha-form">
-                        <input type="text" name="name" id="iname" placeholder="Seu nome" required>
-                    </div>
-                    <div class="linha-form">
-                        <input type="email" name="email" id="iemail" placeholder="Email" required>
-                    </div>
-                    <div class="linha-form">
-                        <textarea name="message" id="imessage" cols="30" rows="10" placeholder="Deixe sua menssagem..." required></textarea>
-                    </div>
-                    <div class="linha-form linha-botao">
-                        <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html"> -->
-                        <button type="submit">Send</button>
-                    </div>
-                </form>
-            </section>
-        </div>
-    </section>
-
-    <footer>
-        <ul>
-            <li><a target="_blank" href="https://github.com/ramon-erik"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="badge do github"></a></li>
-            <li>|</li>
-            <li><a target="_blank" href="https://instagram.com/29erik_"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="badge do instagram"></a></li>
-        </ul>
-        <p>Desenvolvido por <strong>Ramon Erik</strong></p>
-    </footer>
-    <script src="script.js"></script>
+        </section>
+    </main>
 </body>
 </html>
