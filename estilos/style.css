@@ -3,11 +3,9 @@ nesta folha estão os itens de header, footer e outros
  */
 
 :root {
-    --cor1: #3e1b46; /* strong */
-    --cor2: #4f8ebe; /* header */
-    --cor3: #57baf8; 
-    --cor4: #0f75b9; 
-    --cor5: #000a27; /* footeer */
+    --cor1: #5b2268; /* strong */
+    --cor2: #007fe0; /* header */
+    --cor3: #000a27; /* footeer */
 }
 
 * {
@@ -19,6 +17,8 @@ nesta folha estão os itens de header, footer e outros
     scroll-behavior: smooth;
 }
 
+body {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
 /* header */
 header {
     position: fixed;
@@ -29,7 +29,7 @@ header {
 }
 
 header.scrolling {
-    background-color: var(--cor4);
+    background-color: var(--cor2);
 }
 
 .menu {
@@ -85,3 +85,23 @@ nav a:hover, nav a:focus{
 }
 
 /* footer */
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    background-color: var(--cor3);
+    color: white;
+}
+
+footer a {color: white;}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+}
