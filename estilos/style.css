@@ -1,3 +1,7 @@
+/* folha de estilos geral
+nesta folha estão os itens de header, footer e outros
+ */
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
@@ -23,6 +27,7 @@ body, html {
     font-family: 'Bebas Neue', monospace;
 }
 
+/* header */
 header {
     position: fixed;
     display: flex;
@@ -32,8 +37,10 @@ header {
 }
 
 .menu {
+    position: relative;
     padding: 5px;
     cursor: pointer;
+    transition: .4s;
 }
 
 .menu div {
@@ -41,13 +48,27 @@ header {
     height: 3px;
     margin: 5px;
     background-color: white;
+    transition: .4s;
+}
+
+.rodar {
+    position: absolute;
+    transform: rotate(47deg);
+    top: 20px;
+    right: 5px;
+}
+.menu .rodar-negativo {
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    transform: rotate(-47deg);
 }
 
 nav {
     display: none;
     position: absolute;
-    top: 100%;
-    right: 0;
+    top: 90%;
+    right: 16px;
     text-align: center;
     width: 32vw;
     background-color: var(--cor1);
@@ -67,8 +88,4 @@ nav a:hover, nav a:focus{
     color: gray; 
 }
 
-.tela {
-    display: flex;
-    width: 100%;
-    height: 90vh;
-}
+/* footer */
