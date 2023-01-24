@@ -2,8 +2,6 @@
 nesta folha estão os itens de header, footer e outros
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 :root {
     --cor1: #3e1b46; /* strong */
     --cor2: #4f8ebe; /* header */
@@ -24,7 +22,6 @@ body, html {
     overflow-x: hidden;
     width: 100vw;
     height: 100vh;
-    font-family: 'Bebas Neue', monospace;
 }
 
 /* header */
@@ -71,6 +68,10 @@ nav {
     right: 16px;
     text-align: center;
     width: 32vw;
+    background-color: var(--cor1);
+}
+
+.scrolling {
     background-color: var(--cor1);
 }
 
