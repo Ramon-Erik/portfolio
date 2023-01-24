@@ -1,6 +1,8 @@
 /* folha de estilos geral
 nesta folha estão os itens de header, footer e outros
- */
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Ubuntu:wght@300;400;500;700&display=swap');
 
 :root {
     --cor1: #5b2268; /* strong */
@@ -17,7 +19,9 @@ nesta folha estão os itens de header, footer e outros
     scroll-behavior: smooth;
 }
 
-body {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+body {font-family: 'Poppins', sans-serif}
+
+header, header a, main, footer {font-family: 'Ubuntu', sans-serif;}
 
 /* header */
 header {
@@ -83,6 +87,8 @@ nav li {
 }
 
 nav a{
+    font-weight: bold;
+    letter-spacing: .04em;
     color:white; 
     transition: .3s;
 }
@@ -113,7 +119,7 @@ footer ul {
     padding: 10px;
 }
 
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 768px) {
     .menu {display: none;}
     nav {
         display: flex;
