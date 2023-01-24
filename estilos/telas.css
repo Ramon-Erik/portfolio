@@ -7,12 +7,12 @@ para não criar um aquivo imenso */
 /* valores gerais */
 .tela {
     width: 100%;
-    margin-top: 50px;
+    padding-top: 80px;
+    margin-bottom: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.18em;
     line-height: 1.3em;
 }
-
 
 .titulo {
     display: flex;
@@ -41,13 +41,20 @@ para não criar um aquivo imenso */
 
 .conteudo > p {
     width: 330px;
+    margin-top: 20px;
     text-align: justify;
     padding: 15px;
+}
+
+.conteudo > p > strong {
+    font-size: 1.3em;
+    color: var(--cor2);
 }
 
 /* tabelas usadas nas skills e certificados */
 .conteudo-tabela {
     width: 330px;
+    padding-bottom: 20px;
 }
 
 .valores {
@@ -60,13 +67,13 @@ para não criar um aquivo imenso */
     height: 7px;
     background: linear-gradient(to right, var(--cor2), var(--cor3));
 }
-
 /* tela de inicio */
 #inicio {
     display: flex;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    margin-top: 0;
+    padding: 0;
     background: url(../imagens/waves-bgsvg.svg) fixed center bottom;
     background-size: cover;
     color: white;
@@ -84,3 +91,9 @@ para não criar um aquivo imenso */
     width: 300px;
     height: 300px;
 } 
+
+@media screen and (min-width: 660px) {
+    .conteudo > p {
+        width: 440px;
+    }
+}
