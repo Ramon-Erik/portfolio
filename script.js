@@ -6,6 +6,14 @@ const header = document.querySelector('header')
 const minhaLogo = document.querySelector('.img')
 const nav = document.getElementsByTagName('nav')[0]
 
+function tiraMenu() {
+    menu.style = ''
+    nav.style.display = 'none'
+    linha1.classList.remove('rodar')
+    linha2.style.display = 'block'
+    linha3.classList.remove('rodar-negativo')
+}
+
 function mostrarOpc() {
     if (nav.style.display == 'none' || nav.style.display == '') {
         menu.style = 'background: #3e1b46; height: 50px; width: 50px'
@@ -14,11 +22,7 @@ function mostrarOpc() {
         linha3.classList.add('rodar-negativo')
         nav.style.display = 'block'
     } else {
-        menu.style = ''
-        nav.style.display = 'none'
-        linha1.classList.remove('rodar')
-        linha2.style.display = 'block'
-        linha3.classList.remove('rodar-negativo')
+        tiraMenu()
     }
 }
 

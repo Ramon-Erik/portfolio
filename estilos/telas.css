@@ -93,6 +93,9 @@ para não criar um aquivo imenso */
 } 
 
 /* tela de experiencias e educação */
+#quali {
+    height: 90vh;
+}
 #quali i {
     position: absolute;
     transform: translate(-132%, -14%);
@@ -104,6 +107,9 @@ para não criar um aquivo imenso */
 } 
 
 #quali .conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     padding-top: 30px;
     font-size: .9em;
 }
@@ -118,12 +124,16 @@ para não criar um aquivo imenso */
 }
 
 #quali #educacao {
-    width: 65vw;
+    width: 70vw;
+}
+
+#quali #certificados {
+    width: 70vw;
 }
 
 #quali .conteudo-tabela {
-    margin-top: 30px;
     width: 100%;
+    margin: 20px 0 40px 0;
 }
 
 @media screen and (min-width: 660px) {
@@ -143,5 +153,15 @@ para não criar um aquivo imenso */
     }
     #quali .valores .tempo{
         margin-left: 34px;
+    }
+    #quali .conteudo {
+        flex-direction: row;
+    }
+    #quali #educacao {
+        width: 35vw;
+    }
+    
+    #quali #certificados {
+        width: 35vw;
     }
 }
