@@ -38,6 +38,7 @@ para não criar um aquivo imenso */
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
+    z-index: 1;
 }
 
 .conteudo > p {
@@ -69,6 +70,7 @@ para não criar um aquivo imenso */
     height: 7px;
     background: linear-gradient(to right, var(--cor2), var(--cor3));
 }
+
 /* tela de inicio */
 #inicio {
     display: flex;
@@ -84,9 +86,7 @@ para não criar um aquivo imenso */
     letter-spacing: .08em;
 }
 
-#inicio .texto {
-    margin: 0 0 40px 40px;
-}
+#inicio .texto {margin: 0 0 40px 40px;}
 
 /* tela sobre mim */
 #sobre img {
@@ -98,19 +98,19 @@ para não criar um aquivo imenso */
 #quali {
     height: 90vh;
 }
+
 #quali i {
     position: absolute;
     transform: translate(-132%, -14%);
     font-size: 1.7em;
     color: var(--cor3);
 }
+
 #quali h3 {
     margin-left: 37px;
 } 
 
 #quali .conteudo {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     padding-top: 30px;
     font-size: .9em;
@@ -121,6 +121,7 @@ para não criar um aquivo imenso */
     flex-direction: column;
     font-weight: bold;
 }
+
 #quali .valores .tempo{
     margin-left: 34px;
 }

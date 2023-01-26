@@ -32,6 +32,7 @@ header {
     width: 100%;
     padding: 10px;
     transition: .3s;
+    z-index: 2;
 }
 
 header .img {background-image: url(../imagens/logo-ramon.png); width: 215px; height: 35px;}
@@ -40,7 +41,11 @@ header.scrolling {
     background-color: var(--cor2);
 }
 
-header div.scrolling {background-image: url(../imagens/logo-ramon-2.png); width: 215px; height: 35px;}
+header div.scrolling {
+    background-image: url(../imagens/logo-ramon-2.png);
+    width: 215px; 
+    height: 35px;
+}
 
 .menu {
     position: relative;
@@ -57,18 +62,15 @@ header div.scrolling {background-image: url(../imagens/logo-ramon-2.png); width:
     transition: .4s;
 }
 
-.rodar {
-    position: absolute;
-    transform: rotate(47deg);
-    top: 20px;
-    right: 5px;
-}
-.menu .rodar-negativo {
+.menu .rodar-negativo, .menu .rodar {
     position: absolute;
     right: 5px;
     top: 20px;
-    transform: rotate(-47deg);
 }
+
+.rodar {transform: rotate(47deg);}
+
+.menu .rodar-negativo {transform: rotate(-47deg);}
 
 nav {
     display: none;
