@@ -155,7 +155,7 @@ para não criar um aquivo imenso */
     width: 250px;
     height: 160px;
     margin: 10px;
-    background-color: aquamarine;
+    background-color: var(--cor2);
 }
 
 #projetos button {
