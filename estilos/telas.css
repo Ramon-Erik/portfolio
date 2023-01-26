@@ -41,6 +41,7 @@ para não criar um aquivo imenso */
 }
 
 .conteudo > p {
+    text-indent: 35px;
     width: 330px;
     margin-top: 20px;
     text-align: justify;
