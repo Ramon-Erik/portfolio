@@ -37,6 +37,7 @@ para não criar um aquivo imenso */
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    padding: 20px;
 }
 
 .conteudo > p {
@@ -134,6 +135,35 @@ para não criar um aquivo imenso */
 #quali .conteudo-tabela {
     width: 100%;
     margin: 20px 0 40px 0;
+}
+
+/* projetos / portfolio */
+#projetos {
+    height: fit-content;
+}
+
+#projetos .conteudo {
+    max-width: 650px;
+    margin: auto;
+}
+
+#projetos .caixa {
+    display: flex;
+    align-items: flex-end;
+    width: 250px;
+    height: 160px;
+    margin: 10px;
+    background-color: aquamarine;
+}
+
+#projetos button {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    border-top-right-radius: 10px;
+    background-color: var(--cor3);
+    color: white;
+
 }
 
 @media screen and (min-width: 660px) {
